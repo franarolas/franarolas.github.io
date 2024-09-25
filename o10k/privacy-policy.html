@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,8 +19,26 @@
         h2 {
             font-size: 1.5em;
         }
-        p {
-            margin: 10px 0;
+        .tab {
+            display: none;
+        }
+        .tab.active {
+            display: block;
+        }
+        .tab-links {
+            margin-bottom: 20px;
+        }
+        .tab-links button {
+            margin-right: 10px;
+            padding: 10px;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        .tab-links button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
@@ -28,172 +46,164 @@
     <h1>Privacy Policy for O10k - Objectiu 10000</h1>
     <p>Last updated: 25/09/2024</p>
 
-    <h2>1. Introduction</h2>
-    <p>This privacy policy explains how we collect, use, and protect your information when you use our mobile application, O10k - Objectiu 10000.</p>
+    <div class="tab-links">
+        <button onclick="showTab('ca')">Català</button>
+        <button onclick="showTab('en')">English</button>
+        <button onclick="showTab('es')">Español</button>
+    </div>
 
-    <h2>2. Information We Collect</h2>
-    <p>We collect the following personal information:</p>
-    <ul>
-        <li>Name</li>
-        <li>Age</li>
-        <li>Height</li>
-        <li>Weight</li>
-        <li>Studies</li>
-        <li>Profession</li>
-    </ul>
-    <p>This information is collected to facilitate competitions and promote physical activity among users.</p>
+    <div id="ca" class="tab active">
+        <h2>Política de Privacitat per a O10k - Objectiu 10000</h2>
+        <p>Última actualització: 25/09/2024</p>
+        <h2>1. Introducció</h2>
+        <p>Aquesta política de privacitat explica com recopilem, usem i protegim la teva informació quan utilitzes la nostra aplicació mòbil, O10k - Objectiu 10000.</p>
+        <h2>2. Informació que Recopilem</h2>
+        <p>Recopilem la següent informació personal:</p>
+        <ul>
+            <li>Nom</li>
+            <li>Edats</li>
+            <li>Alçada</li>
+            <li>Pes</li>
+            <li>Estudis</li>
+            <li>Professió</li>
+        </ul>
+        <p>Aquesta informació es recopila per facilitar competicions i promoure l'activitat física entre els usuaris.</p>
+        <h2>3. Com Fem Servir la Teva Informació</h2>
+        <p>La teva informació s'utilitza per:</p>
+        <ul>
+            <li>Facilitar competicions entre usuaris.</li>
+            <li>Millorar els nostres serveis de l'aplicació.</li>
+            <li>Comunicar-nos amb tu sobre el teu compte.</li>
+        </ul>
+        <h2>4. Retenció i Eliminació de Dades</h2>
+        <p>Mantenim la teva informació mentre el teu compte estigui actiu o segons sigui necessari per proporcionar-te serveis. Pots eliminar el teu compte en qualsevol moment seguint les instruccions aquí: <a href="https://franarolas.github.io/o10k/delete-account-instructions.html">Instruccions per Eliminar Compte</a>.</p>
+        <h2>5. Seguretat de Dades</h2>
+        <p>Implementem mesures tècniques i organitzatives apropiades per protegir les teves dades personals contra l'accés no autoritzat, la pèrdua o el robatori.</p>
+        <h2>6. Contacta'ns</h2>
+        <p>Si tens alguna pregunta o consulta sobre aquesta política de privacitat, si us plau, contacta'ns a: <a href="mailto:o10k.dots@gmail.com">o10k.dots@gmail.com</a></p>
+        <h2>7. Canvis a Aquesta Política de Privacitat</h2>
+        <p>Podem actualitzar aquesta política de privacitat de tant en tant. T'informarem de qualsevol canvi publicant la nova política de privacitat en aquesta pàgina.</p>
+        <h2>8. Drets de l'Usuari</h2>
+        <p>Com a usuari, tens els següents drets pel que fa a les teves dades personals:</p>
+        <ul>
+            <li>El dret a accedir a les teves dades personals.</li>
+            <li>El dret a sol·licitar la correcció de dades incorrectes o incompletes.</li>
+            <li>El dret a sol·licitar l'eliminació de les teves dades.</li>
+            <li>El dret a retirar el consentiment en qualsevol moment.</li>
+        </ul>
+        <p>Pots exercir aquests drets contactant-nos a <a href="mailto:o10k.dots@gmail.com">o10k.dots@gmail.com</a>.</p>
+        <h2>9. Compartició de Dades amb Tercers</h2>
+        <p>No venem ni compartim les teves dades personals amb tercers, excepte si és requerit per la llei o amb el teu consentiment explícit.</p>
+        <h2>10. Cookies i Tecnologies de Seguiment</h2>
+        <p>La nostra aplicació pot utilitzar cookies i tecnologies de seguiment similars per millorar l'experiència de l'usuari. Pots gestionar les teves preferències de cookies a través de la configuració del teu dispositiu.</p>
+        <h2>11. Transferència de Dades</h2>
+        <p>Les teves dades personals poden ser transferides i processades en països diferents al teu. Assegurem que s'implementin salvaguardes adequades per protegir les teves dades durant aquestes transferències.</p>
+    </div>
 
-    <h2>3. How We Use Your Information</h2>
-    <p>Your information is used to:</p>
-    <ul>
-        <li>Facilitate competitions between users.</li>
-        <li>Improve our app services.</li>
-        <li>Communicate with you regarding your account.</li>
-    </ul>
+    <div id="en" class="tab">
+        <h2>Privacy Policy for O10k - Objectiu 10000</h2>
+        <p>Last updated: 25/09/2024</p>
+        <h2>1. Introduction</h2>
+        <p>This privacy policy explains how we collect, use, and protect your information when you use our mobile application, O10k - Objectiu 10000.</p>
+        <h2>2. Information We Collect</h2>
+        <p>We collect the following personal information:</p>
+        <ul>
+            <li>Name</li>
+            <li>Age</li>
+            <li>Height</li>
+            <li>Weight</li>
+            <li>Studies</li>
+            <li>Profession</li>
+        </ul>
+        <p>This information is collected to facilitate competitions and promote physical activity among users.</p>
+        <h2>3. How We Use Your Information</h2>
+        <p>Your information is used to:</p>
+        <ul>
+            <li>Facilitate competitions between users.</li>
+            <li>Improve our app services.</li>
+            <li>Communicate with you regarding your account.</li>
+        </ul>
+        <h2>4. Data Retention and Deletion</h2>
+        <p>We retain your information for as long as your account is active or as needed to provide you with services. You can delete your account at any time by following the instructions here: <a href="https://franarolas.github.io/o10k/delete-account-instructions.html">Delete Account Instructions</a>.</p>
+        <h2>5. Data Security</h2>
+        <p>We implement appropriate technical and organizational measures to protect your personal data against unauthorized access, loss, or theft.</p>
+        <h2>6. Contact Us</h2>
+        <p>If you have any questions or inquiries about this privacy policy, please contact us at: <a href="mailto:o10k.dots@gmail.com">o10k.dots@gmail.com</a></p>
+        <h2>7. Changes to This Privacy Policy</h2>
+        <p>We may update this privacy policy from time to time. We will notify you of any changes by posting the new privacy policy on this page.</p>
+        <h2>8. User Rights</h2>
+        <p>As a user, you have the following rights regarding your personal data:</p>
+        <ul>
+            <li>The right to access your personal data.</li>
+            <li>The right to request correction of inaccurate or incomplete data.</li>
+            <li>The right to request deletion of your data.</li>
+            <li>The right to withdraw consent at any time.</li>
+        </ul>
+        <p>You can exercise these rights by contacting us at <a href="mailto:o10k.dots@gmail.com">o10k.dots@gmail.com</a>.</p>
+        <h2>9. Third-Party Data Sharing</h2>
+        <p>We do not sell or share your personal data with third parties, except as required by law or with your explicit consent.</p>
+        <h2>10. Cookies and Tracking Technologies</h2>
+        <p>Our app may use cookies and similar tracking technologies to enhance user experience. You can manage your cookie preferences through your device settings.</p>
+        <h2>11. Data Transfer</h2>
+        <p>Your personal data may be transferred and processed in countries other than your own. We ensure that appropriate safeguards are implemented to protect your data during such transfers.</p>
+    </div>
 
-    <h2>4. Data Retention and Deletion</h2>
-    <p>We retain your information for as long as your account is active or as needed to provide you with services. You can delete your account at any time by following the instructions here: <a href="https://franarolas.github.io/o10k/delete-account-instructions.html">Delete Account Instructions</a>.</p>
+    <div id="es" class="tab">
+        <h2>Política de Privacidad para O10k - Objectiu 10000</h2>
+        <p>Última actualización: 25/09/2024</p>
+        <h2>1. Introducción</h2>
+        <p>Esta política de privacidad explica cómo recopilamos, utilizamos y protegemos tu información cuando usas nuestra aplicación móvil, O10k - Objectiu 10000.</p>
+        <h2>2. Información que Recopilamos</h2>
+        <p>Recopilamos la siguiente información personal:</p>
+        <ul>
+            <li>Nombre</li>
+            <li>Edad</li>
+            <li>Altura</li>
+            <li>Peso</li>
+            <li>Estudios</li>
+            <li>Profesión</li>
+        </ul>
+        <p>Esta información se recopila para facilitar competiciones y promover la actividad física entre los usuarios.</p>
+        <h2>3. Cómo Usamos Tu Información</h2>
+        <p>Tu información se utiliza para:</p>
+        <ul>
+            <li>Facilitar competiciones entre usuarios.</li>
+            <li>Mejorar nuestros servicios de la aplicación.</li>
+            <li>Comunicarnos contigo sobre tu cuenta.</li>
+        </ul>
+        <h2>4. Retención y Eliminación de Datos</h2>
+        <p>Mantenemos tu información mientras tu cuenta esté activa o según sea necesario para proporcionarte servicios. Puedes eliminar tu cuenta en cualquier momento siguiendo las instrucciones aquí: <a href="https://franarolas.github.io/o10k/delete-account-instructions.html">Instrucciones para Eliminar Cuenta</a>.</p>
+        <h2>5. Seguridad de Datos</h2>
+        <p>Implementamos medidas técnicas y organizativas apropiadas para proteger tus datos personales contra el acceso no autorizado, la pérdida o el robo.</p>
+        <h2>6. Contáctanos</h2>
+        <p>Si tienes alguna pregunta o consulta sobre esta política de privacidad, por favor contáctanos a: <a href="mailto:o10k.dots@gmail.com">o10k.dots@gmail.com</a></p>
+        <h2>7. Cambios en Esta Política de Privacidad</h2>
+        <p>Podemos actualizar esta política de privacidad de vez en cuando. Te informaremos de cualquier cambio publicando la nueva política de privacidad en esta página.</p>
+        <h2>8. Derechos del Usuario</h2>
+        <p>Como usuario, tienes los siguientes derechos en relación a tus datos personales:</p>
+        <ul>
+            <li>El derecho a acceder a tus datos personales.</li>
+            <li>El derecho a solicitar la corrección de datos incorrectos o incompletos.</li>
+            <li>El derecho a solicitar la eliminación de tus datos.</li>
+            <li>El derecho a retirar el consentimiento en cualquier momento.</li>
+        </ul>
+        <p>Puedes ejercer estos derechos contactándonos a <a href="mailto:o10k.dots@gmail.com">o10k.dots@gmail.com</a>.</p>
+        <h2>9. Compartición de Datos con Terceros</h2>
+        <p>No vendemos ni compartimos tus datos personales con terceros, excepto si es requerido por la ley o con tu consentimiento explícito.</p>
+        <h2>10. Cookies y Tecnologías de Seguimiento</h2>
+        <p>Nuestra aplicación puede utilizar cookies y tecnologías de seguimiento similares para mejorar la experiencia del usuario. Puedes gestionar tus preferencias de cookies a través de la configuración de tu dispositivo.</p>
+        <h2>11. Transferencia de Datos</h2>
+        <p>Tus datos personales pueden ser transferidos y procesados en países distintos al tuyo. Aseguramos que se implementen salvaguardas adecuadas para proteger tus datos durante estas transferencias.</p>
+    </div>
 
-    <h2>5. Data Security</h2>
-    <p>We implement appropriate technical and organizational measures to protect your personal data against unauthorized access, loss, or theft.</p>
-
-    <h2>6. Contact Us</h2>
-    <p>If you have any questions or inquiries about this privacy policy, please contact us at: <a href="mailto:o10k.dots@gmail.com">o10k.dots@gmail.com</a></p>
-
-    <h2>7. Changes to This Privacy Policy</h2>
-    <p>We may update this privacy policy from time to time. We will notify you of any changes by posting the new privacy policy on this page.</p>
-
-    <h2>8. User Rights</h2>
-    <p>As a user, you have the following rights regarding your personal data:</p>
-    <ul>
-        <li>The right to access your personal data.</li>
-        <li>The right to request correction of inaccurate or incomplete data.</li>
-        <li>The right to request deletion of your data.</li>
-        <li>The right to withdraw consent at any time.</li>
-    </ul>
-    <p>You can exercise these rights by contacting us at <a href="mailto:o10k.dots@gmail.com">o10k.dots@gmail.com</a>.</p>
-
-    <h2>9. Third-Party Data Sharing</h2>
-    <p>We do not sell or share your personal data with third parties except as required by law or with your explicit consent.</p>
-
-    <h2>10. Cookies and Tracking Technologies</h2>
-    <p>Our app may use cookies and similar tracking technologies to enhance user experience. You can manage your cookie preferences through your device settings.</p>
-
-    <h2>11. Data Transfer</h2>
-    <p>Your personal data may be transferred to and processed in countries other than your own. We ensure that appropriate safeguards are in place to protect your data during such transfers.</p>
-
-    <h2>Política de Privacidad para O10k - Objectiu 10000</h2>
-    <p>Última actualización: 25/09/2024</p>
-
-    <h2>1. Introducción</h2>
-    <p>Esta política de privacidad explica cómo recopilamos, usamos y protegemos su información cuando utiliza nuestra aplicación móvil, O10k - Objectiu 10000.</p>
-
-    <h2>2. Información que Recopilamos</h2>
-    <p>Recopilamos la siguiente información personal:</p>
-    <ul>
-        <li>Nombre</li>
-        <li>Edad</li>
-        <li>Altura</li>
-        <li>Peso</li>
-        <li>Estudios</li>
-        <li>Profesión</li>
-    </ul>
-    <p>Esta información se recopila para facilitar competiciones y promover la actividad física entre los usuarios.</p>
-
-    <h2>3. Cómo Usamos Su Información</h2>
-    <p>Su información se utiliza para:</p>
-    <ul>
-        <li>Facilitar competiciones entre usuarios.</li>
-        <li>Mejorar nuestros servicios de la aplicación.</li>
-        <li>Comunicarnos con usted sobre su cuenta.</li>
-    </ul>
-
-    <h2>4. Retención y Eliminación de Datos</h2>
-    <p>Mantenemos su información mientras su cuenta esté activa o según sea necesario para proporcionarle servicios. Puede eliminar su cuenta en cualquier momento siguiendo las instrucciones aquí: <a href="https://franarolas.github.io/o10k/delete-account-instructions.html">Instrucciones para Eliminar Cuenta</a>.</p>
-
-    <h2>5. Seguridad de Datos</h2>
-    <p>Implementamos medidas técnicas y organizativas apropiadas para proteger sus datos personales contra el acceso no autorizado, la pérdida o el robo.</p>
-
-    <h2>6. Contáctenos</h2>
-    <p>Si tiene alguna pregunta o consulta sobre esta política de privacidad, comuníquese con nosotros en: <a href="mailto:o10k.dots@gmail.com">o10k.dots@gmail.com</a></p>
-
-    <h2>7. Cambios a Esta Política de Privacidad</h2>
-    <p>Podemos actualizar esta política de privacidad de vez en cuando. Le notificaremos sobre cualquier cambio publicando la nueva política de privacidad en esta página.</p>
-
-    <h2>8. Derechos del Usuario</h2>
-    <p>Como usuario, tiene los siguientes derechos respecto a sus datos personales:</p>
-    <ul>
-        <li>El derecho a acceder a sus datos personales.</li>
-        <li>El derecho a solicitar la corrección de datos inexactos o incompletos.</li>
-        <li>El derecho a solicitar la eliminación de sus datos.</li>
-        <li>El derecho a retirar el consentimiento en cualquier momento.</li>
-    </ul>
-    <p>Puede ejercer estos derechos contactándonos en <a href="mailto:o10k.dots@gmail.com">o10k.dots@gmail.com</a>.</p>
-
-    <h2>9. Compartición de Datos con Terceros</h2>
-    <p>No vendemos ni compartimos sus datos personales con terceros, salvo que sea requerido por la ley o con su consentimiento explícito.</p>
-
-    <h2>10. Cookies y Tecnologías de Seguimiento</h2>
-    <p>Nuestra aplicación puede utilizar cookies y tecnologías de seguimiento similares para mejorar la experiencia del usuario. Puede gestionar sus preferencias de cookies a través de la configuración de su dispositivo.</p>
-
-    <h2>11. Transferencia de Datos</h2>
-    <p>Sus datos personales pueden ser transferidos y procesados en países distintos al suyo. Aseguramos que se implementen salvaguardias adecuadas para proteger sus datos durante tales transferencias.</p>
-
-    <h2>Política de Privacitat per a O10k - Objectiu 10000</h2>
-    <p>Última actualització: 25/09/2024</p>
-
-    <h2>1. Introducció</h2>
-    <p>Aquesta política de privacitat explica com recopilem, usem i protegim la teva informació quan utilitzes la nostra aplicació mòbil, O10k - Objectiu 10000.</p>
-
-    <h2>2. Informació que Recopilem</h2>
-    <p>Recopilem la següent informació personal:</p>
-    <ul>
-        <li>Nom</li>
-        <li>Edats</li>
-        <li>Alçada</li>
-        <li>Pes</li>
-        <li>Estudis</li>
-        <li>Professió</li>
-    </ul>
-    <p>Aquesta informació es recopila per facilitar competicions i promoure l'activitat física entre els usuaris.</p>
-
-    <h2>3. Com Fem Servir la Teva Informació</h2>
-    <p>La teva informació s'utilitza per:</p>
-    <ul>
-        <li>Facilitar competicions entre usuaris.</li>
-        <li>Millorar els nostres serveis de l'aplicació.</li>
-        <li>Comunicar-nos amb tu sobre el teu compte.</li>
-    </ul>
-
-    <h2>4. Retenció i Eliminació de Dades</h2>
-    <p>Mantenim la teva informació mentre el teu compte estigui actiu o segons sigui necessari per proporcionar-te serveis. Pots eliminar el teu compte en qualsevol moment seguint les instruccions aquí: <a href="https://franarolas.github.io/o10k/delete-account-instructions.html">Instruccions per Eliminar Compte</a>.</p>
-
-    <h2>5. Seguretat de Dades</h2>
-    <p>Implementem mesures tècniques i organitzatives apropiades per protegir les teves dades personals contra l'accés no autoritzat, la pèrdua o el robatori.</p>
-
-    <h2>6. Contacta'ns</h2>
-    <p>Si tens alguna pregunta o consulta sobre aquesta política de privacitat, si us plau, contacta'ns a: <a href="mailto:o10k.dots@gmail.com">o10k.dots@gmail.com</a></p>
-
-    <h2>7. Canvis a Aquesta Política de Privacitat</h2>
-    <p>Podem actualitzar aquesta política de privacitat de tant en tant. T'informarem de qualsevol canvi publicant la nova política de privacitat en aquesta pàgina.</p>
-
-    <h2>8. Drets de l'Usuari</h2>
-    <p>Com a usuari, tens els següents drets pel que fa a les teves dades personals:</p>
-    <ul>
-        <li>El dret a accedir a les teves dades personals.</li>
-        <li>El dret a sol·licitar la correcció de dades incorrectes o incompletes.</li>
-        <li>El dret a sol·licitar l'eliminació de les teves dades.</li>
-        <li>El dret a retirar el consentiment en qualsevol moment.</li>
-    </ul>
-    <p>Pots exercir aquests drets contactant-nos a <a href="mailto:o10k.dots@gmail.com">o10k.dots@gmail.com</a>.</p>
-
-    <h2>9. Compartició de Dades amb Tercers</h2>
-    <p>No venem ni compartim les teves dades personals amb tercers, excepte si és requerit per la llei o amb el teu consentiment explícit.</p>
-
-    <h2>10. Cookies i Tecnologies de Seguiment</h2>
-    <p>La nostra aplicació pot utilitzar cookies i tecnologies de seguiment similars per millorar l'experiència de l'usuari. Pots gestionar les teves preferències de cookies a través de la configuració del teu dispositiu.</p>
-
-    <h2>11. Transferència de Dades</h2>
-    <p>Les teves dades personals poden ser transferides i processades en països diferents al teu. Assegurem que s'implementin salvaguardes adequades per protegir les teves dades durant aquestes transferències.</p>
+    <script>
+        function showTab(lang) {
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.getElementById(lang).classList.add('active');
+        }
+    </script>
 </body>
 </html>
